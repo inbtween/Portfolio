@@ -1,9 +1,11 @@
 import React from "react";
-import axios from "axios";
+
 import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+
+import ButtonMailto from "../components/ButtonMail/ButtonMail.js"
 
 class Contact extends React.Component {
   constructor(props) {
@@ -11,7 +13,8 @@ class Contact extends React.Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      mailto: ''
     }
   }
   handleSubmit(e){
@@ -19,6 +22,7 @@ class Contact extends React.Component {
     console.log("submit", this.state);
   
   }
+
 
   render() {
     return(
@@ -62,7 +66,14 @@ class Contact extends React.Component {
             </p>
             <p><a href="https://www.linkedin.com/in/michelle-smith-94a5871b9">LinkedIn</a> 
             <br></br>
-            <a href="https://github.com/inbtween">Giithub</a></p>
+            <a href="https://github.com/inbtween">Github</a>
+            <br></br>
+            <ButtonMailto label="E-Mail" mailto="mailto:smith.michelle.a@gmail.com" />
+            <br></br>
+           
+          
+            </p>
+            
           </Col>
         </Row>
 </Container>

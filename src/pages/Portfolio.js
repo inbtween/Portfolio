@@ -7,6 +7,8 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+import ButtonMailto from "../components/ButtonMail/ButtonMail.js"
+
 //import image
 import image1 from "../images/note-taker-app.png";
 import image2 from "../images/weather-dashboard.png";
@@ -75,6 +77,7 @@ class Portfolio extends Component {
         style={{
           
         }}/>
+        
           </Col>
         </Row>
       </Container>
