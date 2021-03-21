@@ -16,18 +16,8 @@ class Contact extends React.Component {
   }
   handleSubmit(e){
     e.preventDefault();
-    axios({
-      method: "POST", 
-      url:"http://localhost:3003/send", 
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === 'success') {
-        alert("Message Sent."); 
-        this.resetForm()
-      } else if (response.data.status === 'fail') {
-        alert("Message failed to send.")
-      }
-    })
+    console.log("submit", this.state);
+  
   }
 
   render() {
@@ -92,8 +82,7 @@ class Contact extends React.Component {
     this.setState({message: event.target.value})
   }
 
-  handleSubmit(event) {
-  }
+
 }
 
 export default Contact;

@@ -1,7 +1,15 @@
 import React, { Component } from "react";
-import API from "../utils/API";
+
 import Card from "../components/Card";
-import Alert from "../components/Alert";
+
+import Hero from "../components/Hero";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
+
+//import image
+import image1 from "../images/note-taker-app.png";
+import image2 from "../images/weather-dashboard.png"
 
 class Portfolio extends Component {
   state = {
@@ -10,59 +18,59 @@ class Portfolio extends Component {
     matchCount: 0
   };
 
-  // When the component mounts, load the next dog to be displayed
+  // When the component mounts, load the next Image to be displayed
   componentDidMount() {
-    this.loadNextDog();
+    
   }
 
-  handleBtnClick = event => {
-    // Get the data-value of the clicked button
-    const btnType = event.target.attributes.getNamedItem("data-value").value;
-    // Clone this.state to the newState object
-    // We'll modify this object and use it to set our component's state
-    const newState = { ...this.state };
 
-    if (btnType === "pick") {
-      // Set newState.match to either true or false depending on whether or not the dog likes us (1/5 chance)
-      newState.match = 1 === Math.floor(Math.random() * 5) + 1;
-
-      // Set newState.matchCount equal to its current value or its current value + 1 depending on whether the dog likes us
-      newState.matchCount = newState.match
-        ? newState.matchCount + 1
-        : newState.matchCount;
-    } else {
-      // If we thumbs down'ed the dog, we haven't matched with it
-      newState.match = false;
-    }
-    // Replace our component's state with newState, load the next dog image
-    this.setState(newState);
-    this.loadNextDog();
-  };
-
-  loadNextDog = () => {
-    API.getRandomDog()
-      .then(res =>
-        this.setState({
-          image: res.data.message
-        })
-      )
-      .catch(err => console.log(err));
-  };
+ 
 
   render() {
     return (
       <div>
-        <h1 className="text-center">Make New Friends</h1>
-        <h3 className="text-center">
-          Thumbs up on any pups you'd like to meet!
-        </h3>
+           <Hero backgroundImage="https://user-images.githubusercontent.com/76419703/111890668-14c44580-89c2-11eb-86fa-b63d200c0a19.jpg">
+        <h1>Michelle Smith</h1>
+        <h2>Full-Stack Web Developer</h2>
+      </Hero>
+      <Container style={{ marginTop: 30 }}>
+        <Row>
+          <Col size="md-6">
+            <h3 className="text-center">
+              Note-Taker
+            </h3>
         <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
-        <h1 className="text-center">
-          Made friends with {this.state.matchCount} pups so far!
-        </h1>
-        <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-          Yay! That Pup Liked You Too!!!
-        </Alert>
+        <br></br>
+        <h3 className="text-center">
+              Weather Dashboard
+            </h3>
+        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <br></br>
+        <h3 className="text-center">
+              Password Generator
+            </h3>
+        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+          </Col>
+          <Col size="md-6">
+          <h3 className="text-center">
+              Medical Call
+            </h3>
+        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <br></br>
+        <h3 className="text-center">
+              Task Ya Later
+            </h3>
+        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <br></br>
+        <h3 className="text-center">
+              Hamburger Eater
+            </h3>
+        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+          </Col>
+        </Row>
+      </Container>
+        
+       
       </div>
     );
   }
