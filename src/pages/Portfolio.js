@@ -71,7 +71,10 @@ class Portfolio extends Component {
               Hamburger Eater
             </h3>
         <Card image={image6} handleBtnClick={this.handleBtnClick}
-        href="https://floating-brook-75593.herokuapp.com/" />
+        href="https://floating-brook-75593.herokuapp.com/" 
+        style={{
+          
+        }}/>
           </Col>
         </Row>
       </Container>
