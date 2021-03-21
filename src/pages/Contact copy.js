@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
@@ -13,21 +12,6 @@ class Contact extends React.Component {
       email: '',
       message: ''
     }
-  }
-  handleSubmit(e){
-    e.preventDefault();
-    axios({
-      method: "POST", 
-      url:"http://localhost:3003/send", 
-      data:  this.state
-    }).then((response)=>{
-      if (response.data.status === 'success') {
-        alert("Message Sent."); 
-        this.resetForm()
-      } else if (response.data.status === 'fail') {
-        alert("Message failed to send.")
-      }
-    })
   }
 
   render() {
@@ -50,12 +34,11 @@ class Contact extends React.Component {
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input type="email" className="form-control" aria-describedby="emailHelp" id="email"
-              placeholder="Enter a valid email" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+              placeholder="Please enetr a valid email" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message</label>
-                <textarea className="form-control" rows="5" placeholder="Message" value={this.state.message} onChange={this.onMessageChange.bind(this)}></textarea> 
-                
+                <textarea className="form-control" rows="5" placeholder="Message"></textarea> value={this.state.message} onChange={this.onMessageChange.bind(this)} />
               </div>
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
@@ -68,11 +51,24 @@ class Contact extends React.Component {
             </p>
             <br />
             <p>
-             Check me out below:
+             Q tempus eget nibh.
             </p>
-            <p><a href="https://www.linkedin.com/in/michelle-smith-94a5871b9">LinkedIn</a> 
-            <br></br>
-            <a href="https://github.com/inbtween">Giithub</a></p>
+            <>
+            <ul>
+              <li href="https://www.linkedin.com/in/michelle-smith-94a5871b9">
+              <span >
+              <i className="social-linkedin">LinkedIn</i>
+              </span> 
+              </li>
+            </ul>
+            <ul>
+              <li href="https://github.com/inbtween">
+              <span >
+              <i className="social-github">Github</i>
+              </span> 
+              </li>
+            </ul>
+            </>
           </Col>
         </Row>
 </Container>
