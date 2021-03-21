@@ -9,22 +9,22 @@ import Col from "../components/Col";
 
 //import image
 import image1 from "../images/note-taker-app.png";
-import image2 from "../images/weather-dashboard.png"
+import image2 from "../images/weather-dashboard.png";
+import image3 from "../images/password-generator.png";
+import image4 from "../images/project-1-medical-call.png";
+import image5 from "../images/project-2-task-ya-later.png";
+import image6 from "../images/hamburger_app.png";
+
 
 class Portfolio extends Component {
   state = {
-    image: "",
-    match: false,
-    matchCount: 0
+    image: ""
   };
 
   // When the component mounts, load the next Image to be displayed
   componentDidMount() {
     
   }
-
-
- 
 
   render() {
     return (
@@ -39,33 +39,39 @@ class Portfolio extends Component {
             <h3 className="text-center">
               Note-Taker
             </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <Card image={image1} handleBtnClick={this.handleBtnClick}
+        href="https://peaceful-everglades-02412.herokuapp.com/" />
         <br></br>
-        <h3 className="text-center">
+          <h3 className="text-center">
               Weather Dashboard
-            </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+          </h3>
+        <Card image={image2} handleBtnClick={this.handleBtnClick} 
+        href="https://inbtween.github.io/Weather-Dashboard/" />
         <br></br>
         <h3 className="text-center">
               Password Generator
-            </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        </h3>
+        <Card image={image3} handleBtnClick={this.handleBtnClick}
+        href="https://inbtween.github.io/generate-password/" />
           </Col>
           <Col size="md-6">
           <h3 className="text-center">
               Medical Call
             </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <Card image={image4} handleBtnClick={this.handleBtnClick} 
+        href="https://janesferr.github.io/Project1-MedicalCall/"/>
         <br></br>
         <h3 className="text-center">
               Task Ya Later
             </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <Card image={image5} handleBtnClick={this.handleBtnClick} 
+        href="https://project-two-ljm.herokuapp.com/" />
         <br></br>
         <h3 className="text-center">
               Hamburger Eater
             </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
+        <Card image={image6} handleBtnClick={this.handleBtnClick}
+        href="https://floating-brook-75593.herokuapp.com/" />
           </Col>
         </Row>
       </Container>
