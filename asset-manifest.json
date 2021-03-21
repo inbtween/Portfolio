@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/Portfolio/static/js/main.d151e519.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.d151e519.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.6531e949.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.6531e949.js.map",
-    "static/js/2.4d1adef1.chunk.js": "/Portfolio/static/js/2.4d1adef1.chunk.js",
-    "static/js/2.4d1adef1.chunk.js.map": "/Portfolio/static/js/2.4d1adef1.chunk.js.map",
-    "static/js/3.7c241b6c.chunk.js": "/Portfolio/static/js/3.7c241b6c.chunk.js",
-    "static/js/3.7c241b6c.chunk.js.map": "/Portfolio/static/js/3.7c241b6c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.31cee262.chunk.css",
+    "main.js": "/Portfolio/static/js/main.9bd6715f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.9bd6715f.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.c38199c4.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c38199c4.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/Portfolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a0442e2a.chunk.js": "/Portfolio/static/js/2.a0442e2a.chunk.js",
+    "static/js/2.a0442e2a.chunk.js.map": "/Portfolio/static/js/2.a0442e2a.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/Portfolio/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.4d1adef1.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.4d1adef1.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/Portfolio/static/media/logo.6ce24c58.svg"
+    "static/css/2.4c97ca4f.chunk.css.map": "/Portfolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.31cee262.chunk.css.map": "/Portfolio/static/css/main.31cee262.chunk.css.map",
+    "static/js/2.a0442e2a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.a0442e2a.chunk.js.LICENSE.txt",
+    "static/media/hamburger_app.429e0736.png": "/Portfolio/static/media/hamburger_app.429e0736.png",
+    "static/media/note-taker-app.4909e921.png": "/Portfolio/static/media/note-taker-app.4909e921.png",
+    "static/media/password-generator.3e8db823.png": "/Portfolio/static/media/password-generator.3e8db823.png",
+    "static/media/project-1-medical-call.2744298c.png": "/Portfolio/static/media/project-1-medical-call.2744298c.png",
+    "static/media/project-2-task-ya-later.fd533784.png": "/Portfolio/static/media/project-2-task-ya-later.fd533784.png",
+    "static/media/weather-dashboard.98a2306f.png": "/Portfolio/static/media/weather-dashboard.98a2306f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6531e949.js",
-    "static/js/2.4d1adef1.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.d151e519.chunk.js"
+    "static/js/runtime-main.c38199c4.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a0442e2a.chunk.js",
+    "static/css/main.31cee262.chunk.css",
+    "static/js/main.9bd6715f.chunk.js"
   ]
 }
