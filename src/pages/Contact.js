@@ -57,8 +57,7 @@ class Contact extends React.Component {
         <Col size="md-6">
             <h5>Get in Touch</h5>
             <p>
-              Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed
-              malesuada molestie velit ac viverra.
+              
             </p>
             <br />
             <p>

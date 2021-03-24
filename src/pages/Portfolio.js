@@ -7,15 +7,13 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
-import ButtonMailto from "../components/ButtonMail/ButtonMail.js"
-
 //import image
 import image1 from "../images/note-taker-app.png";
 import image2 from "../images/weather-dashboard.png";
 import image3 from "../images/password-generator.png";
 import image4 from "../images/project-1-medical-call.png";
 import image5 from "../images/project-2-task-ya-later.png";
-import image6 from "../images/hamburger_app.png";
+import image6 from "../images/google-book-search.png";
 
 
 class Portfolio extends Component {
@@ -70,10 +68,10 @@ class Portfolio extends Component {
         href="https://project-two-ljm.herokuapp.com/" />
         <br></br>
         <h3 className="text-center">
-              Hamburger Eater
+              Google Book Search
             </h3>
         <Card image={image6} handleBtnClick={this.handleBtnClick}
-        href="https://floating-brook-75593.herokuapp.com/" 
+        href="https://dry-fjord-99010.herokuapp.com/" 
         style={{
           
         }}/>
