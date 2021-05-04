@@ -38,33 +38,50 @@ class Portfolio extends Component {
             <Col size="md-6">
               <h3 className="text-center">
                 Note-Taker
-            </h3>
-              <p>An app that can be used to write and save notes and deployed using Heroku.</p>
-              <a href="https://github.com/inbtween/note-taker-2" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
-              <a href="https://peaceful-everglades-02412.herokuapp.com/" style={{ color: 'black' }} >Deployed Link</a>
+              </h3>
+              <p>An app that can be used to write and save notes and deployed using Heroku.
+              </p>
+              <a href="https://github.com/inbtween/note-taker-2" style={{ display: 'inline-block', color: 'black', margin: '20px' }}>
+                Github Link
+              </a>
+              <a href="https://peaceful-everglades-02412.herokuapp.com/" style={{ color: 'black' }}>
+                Deployed Link
+              </a>
               <Card image={image1} handleBtnClick={this.handleBtnClick}
                 href="https://peaceful-everglades-02412.herokuapp.com/" />
               <br></br>
               <h3 className="text-center">
                 Weather Dashboard
-            </h3>
-              <p>An app that a traveler can use to see the weather outlook for multiple cities and plan accordingly.</p>
+              </h3>
+              <p>An app that a traveler can use to see the weather outlook for multiple cities and plan accordingly.
+              </p>
               <a href="https://github.com/inbtween/Weather-Dashboard" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
-              <a href="https://inbtween.github.io/Weather-Dashboard/" style={{ color: 'black' }} >Deployed Link</a>
+              <a href="https://inbtween.github.io/Weather-Dashboard/" style={{ color: 'black' }} >
+                Deployed Link
+              </a>
               <Card image={image2} handleBtnClick={this.handleBtnClick}
                 href="https://inbtween.github.io/Weather-Dashboard/" />
               <br></br>
               <h3 className="text-center">
                 Password Generator
-            </h3>
+              </h3>
+              <p>This is an application that enables employees to generate random passwords based on criteria that they’ve selected.
+              </p>
+              <a href="https://github.com/inbtween/generate-password" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >
+                Github Link
+              </a>
+              <a href="https://inbtween.github.io/generate-password/" style={{ color: 'black' }} >
+                Deployed Link
+              </a>
               <Card image={image3} handleBtnClick={this.handleBtnClick}
                 href="https://inbtween.github.io/generate-password/" />
             </Col>
             <Col size="md-6">
               <h3 className="text-center">
                 Medical Call
-            </h3>
-              <p>Our website and app will allow you to locate any hospital including the bed count for each hospital near you.</p>
+              </h3>
+              <p>Our website and app will allow you to locate any hospital including the bed count for each hospital near you.
+              </p>
               <a href="https://github.com/janesferr/Project1-MedicalCall/" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
               <a href="https://janesferr.github.io/Project1-MedicalCall/" style={{ color: 'black' }} >Deployed Link</a>
               <Card image={image4} handleBtnClick={this.handleBtnClick}
@@ -72,7 +89,15 @@ class Portfolio extends Component {
               <br></br>
               <h3 className="text-center">
                 Task Ya Later
-            </h3>
+              </h3>
+              <p>This app allows you to improve the productivity of a classroom by giving the user the ability to create task lists that users are then able to send out to students.
+              </p>
+              <a href="https://github.com/ldelgadoIII/Task-Ya-Later" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >
+                Github Link
+              </a>
+              <a href="https://project-two-ljm.herokuapp.com/" style={{ color: 'black' }} >
+                Deployed Link
+              </a>
               <Card image={image5} handleBtnClick={this.handleBtnClick}
                 href="https://project-two-ljm.herokuapp.com/" />
               <br></br>
