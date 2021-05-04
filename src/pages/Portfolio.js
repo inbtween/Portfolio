@@ -47,7 +47,11 @@ class Portfolio extends Component {
               <br></br>
               <h3 className="text-center">
                 Weather Dashboard
-            </h3><Card image={image2} handleBtnClick={this.handleBtnClick}
+            </h3>
+              <p>An app that a traveler can use to see the weather outlook for multiple cities and plan accordingly.</p>
+              <a href="https://github.com/inbtween/Weather-Dashboard" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
+              <a href="https://inbtween.github.io/Weather-Dashboard/" style={{ color: 'black' }} >Deployed Link</a>
+              <Card image={image2} handleBtnClick={this.handleBtnClick}
                 href="https://inbtween.github.io/Weather-Dashboard/" />
               <br></br>
               <h3 className="text-center">
