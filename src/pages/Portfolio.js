@@ -104,6 +104,14 @@ class Portfolio extends Component {
               <h3 className="text-center">
                 Google Book Search
             </h3>
+              <p>This app allows users to search for any book of their choice and a list of books related to their search will appear.
+              </p>
+              <a href="https://github.com/inbtween/google-book-search" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >
+                Github Link
+              </a>
+              <a href="https://dry-fjord-99010.herokuapp.com/" style={{ color: 'black' }} >
+                Deployed Link
+              </a>
               <Card image={image6} handleBtnClick={this.handleBtnClick}
                 href="https://dry-fjord-99010.herokuapp.com/"
                 style={{
