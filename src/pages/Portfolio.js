@@ -40,18 +40,14 @@ class Portfolio extends Component {
                 Note-Taker
             </h3>
               <p>An app that can be used to write and save notes and deployed using Heroku.</p>
-              <pre>
-                <a href="https://github.com/inbtween/note-taker-2" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
-
-                <a href="https://peaceful-everglades-02412.herokuapp.com/" style={{ color: 'black' }} >Deployed Link</a>
-                <Card image={image1} handleBtnClick={this.handleBtnClick}
-                  href="https://peaceful-everglades-02412.herokuapp.com/" />
-              </pre>
+              <a href="https://github.com/inbtween/note-taker-2" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
+              <a href="https://peaceful-everglades-02412.herokuapp.com/" style={{ color: 'black' }} >Deployed Link</a>
+              <Card image={image1} handleBtnClick={this.handleBtnClick}
+                href="https://peaceful-everglades-02412.herokuapp.com/" />
               <br></br>
               <h3 className="text-center">
                 Weather Dashboard
-            </h3>
-              <Card image={image2} handleBtnClick={this.handleBtnClick}
+            </h3><Card image={image2} handleBtnClick={this.handleBtnClick}
                 href="https://inbtween.github.io/Weather-Dashboard/" />
               <br></br>
               <h3 className="text-center">
@@ -64,6 +60,9 @@ class Portfolio extends Component {
               <h3 className="text-center">
                 Medical Call
             </h3>
+              <p>Our website and app will allow you to locate any hospital including the bed count for each hospital near you.</p>
+              <a href="https://github.com/janesferr/Project1-MedicalCall/" style={{ display: 'inline-block', color: 'black', margin: '20px' }} >Github Link</a>
+              <a href="https://janesferr.github.io/Project1-MedicalCall/" style={{ color: 'black' }} >Deployed Link</a>
               <Card image={image4} handleBtnClick={this.handleBtnClick}
                 href="https://janesferr.github.io/Project1-MedicalCall/" />
               <br></br>
