@@ -3,27 +3,27 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import "./style.css";
 
-function About() {
+
+function Home() {
   return (
     <div>
       <Hero backgroundImage="https://user-images.githubusercontent.com/76419703/111890668-14c44580-89c2-11eb-86fa-b63d200c0a19.jpg">
-        <h1>Michelle Smith</h1>
-        <h2>Full-Stack Web Developer</h2>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1>Hello!</h1>
+            <h1>Hello,</h1>
+            <h2>I am Michelle Smith.</h2>
+            <h2>I am a Full-Stack Web Developer and Fine Artist.</h2>
           </Col>
         </Row>
         <Row>
           <Col size="md-12">
-           
-            <p>
-              This is a Portfolio of my work as a Full-Stack Web Developer.
-            </p>
-            
+            <h2>
+              And this is a Portfolio of my work.
+            </h2>
           </Col>
         </Row>
       </Container>
@@ -31,4 +31,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
